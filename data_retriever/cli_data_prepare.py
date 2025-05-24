@@ -63,7 +63,7 @@ def process_cli_images():
         target_dir=final_dir
     )
     preparer.setup_directory_structure()
-    preparer.prepare_balanced_dataset(target_count=1000)  # 1000 images per class
+    preparer.prepare_balanced_dataset(target_count=4500)  # Using all available images without limiting
 
 if __name__ == "__main__":
     process_cli_images() 

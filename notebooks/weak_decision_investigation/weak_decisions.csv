@@ -1,0 +1,16 @@
+image_path,true_label,predicted_prob,weak_decision
+/content/drive/My Drive/melonoma_isic/test/benign/ISIC_0012155.jpg,0,0.49753055,True
+/content/drive/My Drive/melonoma_isic/test/benign/ISIC_0014913.jpg,0,0.4536485,True
+/content/drive/My Drive/melonoma_isic/test/benign/ISIC_7953713.jpg,0,0.49639672,True
+/content/drive/My Drive/melonoma_isic/test/benign/ISIC_0016050.jpg,0,0.54218185,True
+/content/drive/My Drive/melonoma_isic/test/benign/ISIC_8918219.jpg,0,0.5318165,True
+/content/drive/My Drive/melonoma_isic/test/malignant/ISIC_0035929.jpg,1,0.4717116,True
+/content/drive/My Drive/melonoma_isic/test/malignant/ISIC_0035362.jpg,1,0.48701984,True
+/content/drive/My Drive/melonoma_isic/test/malignant/ISIC_8952876.jpg,1,0.49890757,True
+/content/drive/My Drive/melonoma_isic/test/malignant/ISIC_0000313.jpg,1,0.53684455,True
+/content/drive/My Drive/melonoma_isic/test/malignant/ISIC_0013457.jpg,1,0.533863,True
+/content/drive/My Drive/melonoma_isic/test/malignant/ISIC_4267994.jpg,1,0.45883375,True
+/content/drive/My Drive/melonoma_isic/test/malignant/ISIC_0014013.jpg,1,0.5169153,True
+/content/drive/My Drive/melonoma_isic/test/malignant/ISIC_0014545.jpg,1,0.4725101,True
+/content/drive/My Drive/melonoma_isic/test/malignant/ISIC_4301916.jpg,1,0.50933194,True
+/content/drive/My Drive/melonoma_isic/test/malignant/ISIC_3576876.jpg,1,0.53964245,True

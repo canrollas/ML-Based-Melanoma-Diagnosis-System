@@ -1,5 +1,15 @@
 ## Usage of `inference_tool`
 
+
+---
+
+### ⚠️ Warning
+
+This tool is for research and educational purposes only. When testing the model, **select images with clearly visible asymmetry, irregular borders, or dark pigmentation patterns**—features typically associated with malignant cases.
+Please note that **most images labeled as "malignant" online are diagnosed via biopsy**, even when they visually resemble benign lesions. Therefore, model predictions may **not align with medical ground truth** without clinical context. Use with caution and do not rely on this tool for real-world diagnostic decisions.
+
+---
+
 The `inference_tool` (executed via `app.py`) is a command-line utility designed to perform inference using a pre-trained deep learning model. Its primary purpose is to classify skin lesions from images, predicting whether they are benign or malignant. This tool allows for rapid testing and application of your trained model on single or multiple images.
 
 ### Prerequisites
@@ -17,7 +27,7 @@ come to this directory from terminal. run it like this
 
 > path_to_image_directory : you can use the images dir inside of this directory. It includes many images to test.
 
-> eg: python app.py --model /home/cengo/PycharmProjects/MelonomaDetection/models/final_finetuned_model.keras --dir /home/cengo/PycharmProjects/MelonomaDetection/inference_tool/images
+> eg: python app.py --model ../models/final_finetuned_model.keras --dir trial
 
 
 ```bash
@@ -53,15 +63,28 @@ When executed, the `inference_tool` typically performs the following steps:
 
 **Illustrative Console Output Example:**
 ```
-Running inference_tool...
-Loading model: /home/cengo/PycharmProjects/MelonomaDetection/models/final_finetuned_model.keras
-Scanning image directory: /home/cengo/PycharmProjects/MelonomaDetection/inference_tool/images
+1/1 ━━━━━━━━━━━━━━━━━━━━ 6s 6s/step
+malignant_ISIC_3985031.jpg → Malignant (Confidence: 0.98)
+1/1 ━━━━━━━━━━━━━━━━━━━━ 1s 510ms/step
+img_1.png → Benign (Confidence: 0.09)
+1/1 ━━━━━━━━━━━━━━━━━━━━ 1s 513ms/step
+img_2.png → Benign (Confidence: 0.39)
+1/1 ━━━━━━━━━━━━━━━━━━━━ 1s 510ms/step
+benign_3.png → Benign (Confidence: 0.25)
+1/1 ━━━━━━━━━━━━━━━━━━━━ 1s 536ms/step
+benign_2.png → Benign (Confidence: 0.58)
+1/1 ━━━━━━━━━━━━━━━━━━━━ 1s 512ms/step
+malignant_2.png → Malignant (Confidence: 0.93)
+1/1 ━━━━━━━━━━━━━━━━━━━━ 1s 519ms/step
+img.png → Malignant (Confidence: 0.98)
+1/1 ━━━━━━━━━━━━━━━━━━━━ 1s 515ms/step
+malignant_3.png → Benign (Confidence: 0.47)
+1/1 ━━━━━━━━━━━━━━━━━━━━ 1s 512ms/step
+malignant.png → Benign (Confidence: 0.53)
+1/1 ━━━━━━━━━━━━━━━━━━━━ 1s 515ms/step
+benign.png → Benign (Confidence: 0.46)
 
-Processing image1.jpg... Prediction: Malignant (Confidence: 0.85)
-Processing image2.png... Prediction: Benign (Confidence: 0.92)
-Processing image3.jpg... Prediction: Malignant (Confidence: 0.67)
-...
-Inference completed for all images.
 ```
+
  
  

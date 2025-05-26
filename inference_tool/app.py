@@ -13,7 +13,7 @@ def predict_image(model, img_path, target_size=(224, 224)):
         img_array = preprocess_input(img_array)
         img_array = np.expand_dims(img_array, axis=0)
         prediction = model.predict(img_array)[0][0]
-        label = "Malignant" if prediction >= 0.5 else "Benign"
+        label = "Malignant" if prediction >= 0.6 else "Benign"
         return label, float(prediction)
     except Exception as e:
         return "Error", str(e)

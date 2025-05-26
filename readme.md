@@ -31,6 +31,9 @@ This project begins with an extensive data collection process, implemented withi
 * **ZIP URL Resources**: Additional curated image datasets were downloaded via public ZIP URLs.
 
 In total, approximately **11,000 images** were collected. The detailed distribution of the images by class (Benign vs Malignant), year, and source is provided in the `README.md` inside the `data_retriever/` directory.
+️
+> ️️Reminder important note ⚠️ Warning : I used python version of 3.9.6 you can use higher but it can crash due to tensorflow setuptools removed on 3.12 
+> You can install for test env with pip install -r requirements.txt 
 
 ## 2. Model Training and Evaluation
 
@@ -40,6 +43,7 @@ Training workflows and experimentation are documented across several Jupyter not
 
 * **2,000 images** were initially used to train a base model.
 * This model showed high test accuracy (\~95%) but demonstrated clear signs of **overfitting**, as evidenced by divergence in training vs validation performance.
+
 
 ### Expansion and Fine-Tuning
 

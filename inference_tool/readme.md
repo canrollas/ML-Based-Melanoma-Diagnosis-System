@@ -12,7 +12,13 @@ It is also recommended to have Python 3.x installed.
 
 ### Basic Usage
 
-The fundamental command structure to run the tool is as follows:
+come to this directory from terminal. run it like this
+> path_to_model_file : in the main directory, you can use the models dir. It includes keras files.
+
+> path_to_image_directory : you can use the images dir inside of this directory. It includes many images to test.
+
+> eg: python app.py --model /home/cengo/PycharmProjects/MelonomaDetection/models/final_finetuned_model.keras --dir /home/cengo/PycharmProjects/MelonomaDetection/inference_tool/images
+
 
 ```bash
 python app.py --model <PATH_TO_MODEL_FILE> --dir <PATH_TO_IMAGE_DIRECTORY>

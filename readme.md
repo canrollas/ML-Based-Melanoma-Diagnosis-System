@@ -39,6 +39,31 @@ In total, approximately **11,000 images** were collected. The detailed distribut
 
 Training workflows and experimentation are documented across several Jupyter notebooks:
 
+### >Navigating the Notebooks
+
+If you wish to explore the training process and model analysis in detail, we recommend starting by reading the `README.md` located in the **notebooks directory**. It provides an overview of the entire project structure and guides you through the workflow.
+
+The notebooks are organized into subdirectories that reflect each phase of the project:
+
+* **`initial_model/`**
+  This folder contains the initial training experiments where a base model was trained **without any fine-tuning**. It establishes a performance baseline and helps identify limitations that motivated further improvements.
+
+* **`weak_decision_investigation/`**
+  This directory focuses on analyzing **ambiguous predictions**, specifically those with confidence levels in the range of **0.45 < x < 0.55**. These borderline cases are examined to understand the weaknesses of the initial model and to provide insight into why certain decisions were uncertain.
+
+* **`fine_tune_process/`**
+  Here, we applied **hyperparameter tuning** using a **random search** strategy. The goal was to optimize model performance and reduce overfitting observed in earlier stages. This notebook demonstrates the tuning process and presents the selected optimal configuration.
+
+* **`gradcam_process/`**
+  To offer interpretability and clinical insight, this folder includes **Grad-CAM-based visualizations** that show which regions the model focuses on when making predictions. These visual cues can help medical professionals assess the model's decision rationale and identify whether it's attending to medically relevant features.
+
+* **`metrics_evaluation/`**
+  This final notebook evaluates the trained model using various performance metrics such as **F1-score**, **ROC-AUC**, **precision**, and **recall**. Visualizations and classification reports are also provided to give a comprehensive view of the model’s diagnostic ability.
+
+Each of these stages builds upon the previous one, resulting in a robust pipeline for training, tuning, interpreting, and evaluating a deep learning model for melanoma classification.
+ 
+
+
 ### Initial Training Phase
 
 * **2,000 images** were initially used to train a base model.
